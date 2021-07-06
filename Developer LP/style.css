@@ -124,7 +124,7 @@ h2 {
   align-items: center;
 }
 .section__landing__top {
-  height: 40vh;
+  height: 50%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -147,7 +147,7 @@ h2 {
 }
 
 .section__landing__bottom {
-  height: 40vh;
+  height: 50%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.9);
 
