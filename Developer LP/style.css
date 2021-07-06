@@ -1,6 +1,8 @@
 :root {
+  /* Variables for navigation */
     --bottom-nav-space: 10vh; /* Making space for the navbar */
-
+    --bottom-nav-iconsize: 3.5vh;
+    --bottom-nav-fontsize: 1.5vh;
 }
 * {
   padding: 0;
@@ -43,7 +45,6 @@ body {
   overflow: hidden; /* No scrolling or text out of the box*/
   white-space: nowrap; /* No linebreak in the text*/
   font-family: sans-serif;
-  font-size: 2em;
   color: #444444;
   text-decoration: none; /* No underline on links*/
   -webkit-tap-highlight-color: transparent;
@@ -59,12 +60,13 @@ body {
 }
 
 .nav__icon {
-  font-size: 2.5em;
+  font-size: var(--bottom-nav-iconsize);
   margin: 10px;
 }
 
 .nav__text {
-  margin-bottom: 10px;
+  font-size: var(--bottom-nav-fontsize);
+  margin-bottom: 1vh;
 }
 
 /* Content follows: */
