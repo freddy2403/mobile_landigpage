@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bottom Menu</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <!-- Todo: Top Navigation Bar -->
+    <!-- Page Content starts here-->
+    <div class="container">
+      <section class="section__landing">
+        <div class="section__landing__top">
+          <!-- Maybe there is a better way of styling this. e.g. span ? -->
+          <p class="heading">I build <br> amazing <br> websites</p>
+          <p class="subheading">Webdesigner from Dortmund (GER)</p>
+        </div>
+        <div class="section__landing__bottom">
+          <h2>My Work</h2>
+          <!-- Container for the slideshow with images from projects -->
+          <div class="slideshow">
+            <img class="image__slide" src="./assets/slide3.jpg" alt="">
+            <img class="image__slide" src="./assets/slide2.jpg" alt="">
+            <img class="image__slide" src="./assets/slide1.jpg" alt="">
+            <img class="image__slide" src="./assets/slide3.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- More Pages -->
+      <section class="two">
+        <h1>Second Page</h1>
+      </section>
+      <section class="three">
+        <h1>Third Page</h1>
+      </section>
+      <section class="four">
+        <h1>Fourth Page</h1>
+      </section>
+    </div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#" class="nav__link nav__link--active">
+        <i class="material-icons nav__icon">dashboard</i>
+        <span class="nav__text">Portfolio</span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon">code</i>
+        <span class="nav__text">Skills</span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon">pending_actions</i>
+        <span class="nav__text">Hire Me</span>
+      </a>
+    </nav>
+    <!-- Scripts for animation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+      integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
