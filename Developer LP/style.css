@@ -1,6 +1,6 @@
 :root {
   /* Variables for navigation */
-    --bottom-nav-space: 10vh; /* Making space for the navbar */
+    --bottom-nav-space: 10vh; /* Making space at the bottom of the page for the navbar */
     --bottom-nav-iconsize: 3.5vh;
     --bottom-nav-fontsize: 1.5vh;
 }
@@ -21,6 +21,11 @@ section {
 
 body {
   margin: 0 0 var(--bottom-nav-space) 0; /* Making Space at the bottom*/
+}
+
+h2 {
+  text-align: left;
+  margin-left: 10%;
 }
 
 /* Navigation styling follows: */
@@ -95,27 +100,26 @@ body {
   flex-direction: column;
   justify-content: center; /* Centering on vertical Axis */
 }
+
+/*TODO: Container for heading and subheading */
+.heading {
+  font-size: 5vh;
+  text-align: left;
+  margin-left: 10%;
+}
+.subheading {
+  font-size: 2.5vh;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
 .section__landing__bottom {
   height: 40vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
 
 }
-
-/*TODO: Container for heading and subheading */
-.heading {
-  font-size: 58px;
-  text-align: left;
-  margin-left: 10%;
-}
-
-.subheading {
-  font-size: 22px;
-  text-align: left;
-  margin-bottom: 20px;
-  margin-left: 10%;
-}
-
 .slideshow {
   height: 40vh;
   display: flex;
