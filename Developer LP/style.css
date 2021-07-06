@@ -9,54 +9,58 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
 }
-
 section {
   height: 100vh;
   display: flex;
   justify-content: center; /* On horizontal axis*/
   align-items: center; /* On vertical axis*/
 }
-
 body {
   margin: 0 0 var(--bottom-nav-space) 0; /* Making Space at the bottom*/
 }
 
 header {
   position: fixed;
+  z-index: 100;
   width: 100vw;
   height: 7vh;
-  padding-top: 1vh;
+  min-width: 150px;
+  min-height: 50px;
   background-color: rgba(10, 10, 10, 0.5);
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
 .header__link {
-  font-size: 90%;
   margin: 10px;
-  min-width: 50px;
+  display: flex;
+  align-items: flex-start;
   overflow: hidden; /* No scrolling or text out of the box*/
   white-space: nowrap; /* No linebreak in the text*/
-  font-family: sans-serif;
   color: white;
   text-decoration: none; /* No underline on links*/
   -webkit-tap-highlight-color: transparent;
   transition: background-color 0.1s ease-in-out;
+}
+.header__logo, .header__menu {
+  font-size: 4vh;
+  text-align: center;
+  min-height: 50px;
+  min-width: 50px;
+}
+.header__text {
+  font-size: 3vh;
+  text-align: center;
 }
 
 .header__menu:hover {
   background-color: rgba(244, 244, 244, 0.4);
 }
 
-
-h2 {
-  font-size: 3vh;
-  text-align: left;
-  margin-left: 10%;
-  margin-top: 1vh;
-}
 
 /* Navigation styling follows: */
 .nav {
@@ -79,7 +83,6 @@ h2 {
   min-width: 50px;
   overflow: hidden; /* No scrolling or text out of the box*/
   white-space: nowrap; /* No linebreak in the text*/
-  font-family: sans-serif;
   color: #444444;
   text-decoration: none; /* No underline on links*/
   -webkit-tap-highlight-color: transparent;
@@ -105,6 +108,12 @@ h2 {
 }
 
 /* Content follows: */
+h2 {
+  font-size: 3vh;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 1vh;
+}
 
 .container {
   text-align: center;
