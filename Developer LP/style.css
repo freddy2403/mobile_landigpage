@@ -23,9 +23,40 @@ body {
   margin: 0 0 var(--bottom-nav-space) 0; /* Making Space at the bottom*/
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 7vh;
+  padding-top: 2vh;
+  background-color: rgba(10, 10, 10, 0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  font-size: 90%;
+  margin: 10px;
+  min-width: 50px;
+  overflow: hidden; /* No scrolling or text out of the box*/
+  white-space: nowrap; /* No linebreak in the text*/
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none; /* No underline on links*/
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.header__menu:hover {
+  background-color: rgba(244, 244, 244, 0.4);
+}
+
+
 h2 {
+  font-size: 3vh;
   text-align: left;
   margin-left: 10%;
+  margin-top: 1vh;
 }
 
 /* Navigation styling follows: */
@@ -117,7 +148,7 @@ h2 {
 .section__landing__bottom {
   height: 40vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 
 }
 .slideshow {
